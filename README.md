@@ -121,7 +121,7 @@ Et voilà !
 Il nous reste plus qu’à tester notre filtre anti-spam. Certes, il n’est pas de la tremple que celui de Google, mais, regardons ce qu’il a dans le ventre.
 -Vu que les mails de notre Training Set sont en anglais et quelques mail en Malagasy, on lui donnera un tableau de mail à travailler
 ```python
-TableauDePhrase = ['Free Viagra now!!!', "Bonjour Sandrine, comment ca va? je t'aime", "Ndao hilely fory be"]
+TableauDePhrase = ['Free Viagra now!!!', "Bonjour Sandrine, comment ca va? je t'aime"]
 compteurVecteur = vecteur.transform(TableauDePhrase)
 predictions = classifier.predict(compteurVecteur)
 ```
@@ -130,7 +130,6 @@ La sortie de l'application donnera :
 ```batch
 Free Viagra now!!!  =>  SPAM
 Bonjour Sandrine, comment ca va? je t'aime  =>  HAM | Message normale
-Ndao hilely fory be  =>  SPAM
 ```
 
 ### Piste d’améliorations
